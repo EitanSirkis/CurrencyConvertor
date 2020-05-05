@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="3dp"
+        android:background="@null"
+        android:dropDownWidth="120dp"
+        android:dropDownVerticalOffset="96dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.example.currencyconvertor.MultiButton
+        android:id="@+id/multiButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:numOfButtons="2"
+        app:reversedOrder="false"
+        app:activeButtonIndex="1"
+        app:backgroundSelector="@drawable/multi_button_background_selector"
+        app:textColorSelector="@drawable/multi_button_text_color"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/titleTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/textView2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/multiButton"
+        tools:text="TextView1" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="Symbol"
+        android:textColor="@color/titleTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/textView3"
+        app:layout_constraintStart_toEndOf="@id/textView1"
+        app:layout_constraintTop_toTopOf="@id/textView1"
+        tools:text="TextView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/titleTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/textView4"
+        app:layout_constraintStart_toEndOf="@id/textView2"
+        app:layout_constraintTop_toTopOf="@id/textView1"
+        app:layout_goneMarginEnd="3dp"
+        tools:text="TextView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:textColor="@color/titleTextColor"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textView3"
+        app:layout_constraintTop_toTopOf="@id/textView1"
+        tools:text="TextView4" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="3dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        tools:listitem="@layout/relative_currency_rate_row" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

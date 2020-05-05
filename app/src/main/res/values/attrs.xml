@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="MultiButton">
+        <attr name="numOfButtons" format="integer" />
+        <attr name="reversedOrder" format="boolean" />
+        <attr name="activeButtonIndex" format="integer" />
+        <attr name="aaaa" format="color"/>
+        <attr name="backgroundSelector" format="reference"/>
+        <attr name="textColorSelector" format="reference"/>
+    </declare-styleable>
+</resources>

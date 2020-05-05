@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="1dp"
+
+    android:background="@color/rowColor">
+
+
+    <TextView
+        android:id="@+id/symbolTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/currencyRowTextColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nameTextView"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="symbol" />
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/currencyRowTextColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/priceTextView"
+        app:layout_constraintStart_toEndOf="@id/symbolTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="namefdsfdsdfd ggdfdgdf gddf" />
+
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/currencyRowTextColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/marketCupTextView"
+        app:layout_constraintStart_toEndOf="@id/nameTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="price" />
+
+
+    <TextView
+        android:id="@+id/marketCupTextView"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/currencyRowTextColor"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/priceTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="market value" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

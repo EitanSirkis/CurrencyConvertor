@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e2024</color>
+    <color name="colorPrimaryDark">#1e2024</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundColor">#1e2024</color>
+    <color name="titleTextColor">#8796aa</color>
+    <color name="rowColor">#21282d</color>
+    <color name="currencyRowTextColor">#ffffff</color>
+
+
+
+
+</resources>
